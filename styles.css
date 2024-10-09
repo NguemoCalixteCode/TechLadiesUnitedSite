@@ -1,0 +1,204 @@
+/* Custom CSS for TechLadies United */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-image: url('img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 200px; 
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Fade-in animation */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* About Section */
+#about {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+}
+
+#about h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#about h2::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #007bff;
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%);
+}
+
+/* Card Styles */
+.card {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #007bff;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Animations */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Navigation fixe */
+.navbar {
+    position: fixed; /* Fixe la barre de navigation */
+    top: 0; /* Colle la barre en haut de la fenêtre */
+    left: 0; /* Colle la barre à gauche */
+    width: 100%; /* La barre de navigation occupe toute la largeur de l'écran */
+    z-index: 1000; /* Assure que la barre est au-dessus d'autres éléments */
+}
+
+/* Pour compenser l'espace pris par la barre de navigation */
+body {
+    padding-top: 60px; /* Ajustez cette valeur en fonction de la hauteur de votre navbar */
+}
+
+/* Amélioration de l'ombre pour une meilleure visibilité */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre douce pour la navbar */
+}
+
+/* Footer styles */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #000; /* Change le fond du footer en noir */
+    color: #fff; /* Change la couleur du texte en blanc */
+}
+
+footer h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #fff; /* Assure que le titre est en blanc */
+}
+
+footer p {
+    margin-bottom: 0;
+    color: #ddd; /* Une couleur grise pour le texte du paragraphe */
+}
+
+footer a {
+    font-size: 24px; /* Adjust icon size */
+    color: #007bff; /* Couleur par défaut pour les icônes */
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #0056b3; /* Darker shade on hover */
+}
+
+.card {
+    border: none; /* Supprimer les bordures des cartes */
+    border-radius: 10px; /* Arrondir les coins des cartes */
+    transition: transform 0.2s; /* Effet de transition pour le survol */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Effet de zoom au survol */
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0; /* Arrondir le haut de l'image */
+}
+
+.navbar-brand img {
+    margin-right: 10px; /* Espace entre le logo et le texte */
+    vertical-align: middle; /* Assurer l'alignement du logo avec le texte */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Aligne le logo et le texte verticalement */
+}
+
+.navbar-brand img {
+    margin-right: 10px; /* Ajoute de l'espace entre le logo et le texte */
+}
+
+.navbar-brand span {
+    font-size: 1.5rem; /* Taille du texte pour "TechLadies United" */
+    font-weight: bold; /* Optionnel : rendre le texte plus visible */
+    vertical-align: middle;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 0.5rem 1rem; /* Ajuste l'espacement des éléments du menu */
+}
+
+
+
+
